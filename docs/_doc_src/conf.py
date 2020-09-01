@@ -175,7 +175,7 @@ repo = Repo(search_parent_directories=True)
 remote_url = repo.remotes.origin.url
 
 versions = [
-    (tag.tag, os.sep.join([html_theme_options['canonical_url'], tag.tag]))
+    (tag.name, os.sep.join([html_theme_options['canonical_url'], tag.name]))
     for tag in repo.tags
 ]
 html_context = {
